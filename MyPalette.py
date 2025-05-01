@@ -9,3 +9,7 @@
 #define displayable hex code function
 #converts last output into proper hex code
 #return
+
+#define create image function
+#creates an image using previously generated information with set height
+#return
