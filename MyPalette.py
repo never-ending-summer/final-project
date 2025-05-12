@@ -1,7 +1,5 @@
-#start here
-
-#import libraries needed
-#for sure add PIL, random
+import random
+from PIL import Image, ImageFont, ImageDraw
 
 #define main function
 
