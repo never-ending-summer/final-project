@@ -1,7 +1,10 @@
 import random
 from PIL import Image, ImageFont, ImageDraw
 
-#define main function
+def main():
+colors = [generate_random_color() for _ in range(5)]
+create_image_palette(colors)
+print("Image Save Complete! Look for 'color_palette.png'")
 
 #define random color function
 #return
@@ -13,5 +16,3 @@ from PIL import Image, ImageFont, ImageDraw
 #define create image function
 #creates an image using previously generated information with set height
 #return
-
-#call main function
