@@ -13,8 +13,8 @@ def rgb_to_hex(rgb):
     return '#{:02x}{:02x}{:02x}'.format(rgb[0], rgb[1], rgb[2])
 
 def create_image_palette(colors):
-    width = 1280
-    height = 720
+    width = 750
+    height = 350
     block_width = width // len(colors)
 
     image = Image.new("RGB", (width, height), (255, 255, 255))
