@@ -7,7 +7,7 @@ def main():
     print("Image Save Complete! Look for 'color_palette.png'")
 
 def generate_random_color():
-    return (random.randit(0,255), random.randit(0,255), random.randit(0, 255))
+    return (random.randint(0,255), random.randint(0,255), random.randint(0, 255))
 
 def rgb_to_hex(rgb):
     return '#{:02x}{:02x}{:02x}'.format(rgb)
