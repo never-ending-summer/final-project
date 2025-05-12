@@ -12,6 +12,7 @@ def generate_random_color():
 def rgb_to_hex(rgb):
     return '#{:02x}{:02x}{:02x}'.format(rgb)
 
-#define create image function
-#creates an image using previously generated information with set height
-#return
+def create_image_palette(colors):
+    width = 1280
+    height = 720
+    block_width = width // len(colors)
