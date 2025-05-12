@@ -21,3 +21,6 @@ def create_image_palette(colors):
     draw = ImageDraw.Draw(image)
 
     font = ImageFont.load_default()
+
+    for i, color in enumerate(colors):
+        draw.rectangle([(i * block_width, 0), ((i + 1) * block_width - 1, height)], fill=color)
