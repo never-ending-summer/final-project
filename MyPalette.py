@@ -19,3 +19,5 @@ def create_image_palette(colors):
 
     image = Image.new("RGB", (width, height), (255, 255, 255))
     draw = ImageDraw.Draw(image)
+
+    font = ImageFont.load_default()
