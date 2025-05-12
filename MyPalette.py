@@ -10,7 +10,7 @@ def generate_random_color():
     return (random.randint(0,255), random.randint(0,255), random.randint(0, 255))
 
 def rgb_to_hex(rgb):
-    return '#{:02x}{:02x}{:02x}'.format(rgb)
+    return '#{:02x}{:02x}{:02x}'.format(rgb[0], rgb[1], rgb[2])
 
 def create_image_palette(colors):
     width = 1280
@@ -29,7 +29,7 @@ def create_image_palette(colors):
         text_position = (i * block_width + 10, height - 30)
         draw.text(text_position, hex_code, fill = (0, 0, 0), font=font)
 
-    image.save("color_palette")
+    image.save("color_palette.png")
 
 if __name__ == "__main__":
     main()
