@@ -24,3 +24,12 @@ def create_image_palette(colors):
 
     for i, color in enumerate(colors):
         draw.rectangle([(i * block_width, 0), ((i + 1) * block_width - 1, height)], fill=color)
+
+        hex_code = rgb_to_hex(color)
+        text_position = (i * block_width + 10, height - 30)
+        draw.text(text_position, hex_code, fill = (0, 0, 0), font=font)
+
+    image.save("color_palette")
+
+if __name__ == "__main__":
+    main()
