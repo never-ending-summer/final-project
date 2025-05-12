@@ -2,12 +2,12 @@ import random
 from PIL import Image, ImageFont, ImageDraw
 
 def main():
-colors = [generate_random_color() for _ in range(5)]
-create_image_palette(colors)
-print("Image Save Complete! Look for 'color_palette.png'")
+    colors = [generate_random_color() for _ in range(5)]
+    create_image_palette(colors)
+    print("Image Save Complete! Look for 'color_palette.png'")
 
-#define random color function
-#return
+def generate_random_color():
+    return (random.randit(0,255), random.randit(0,255), random.randit(0, 255))
 
 #define displayable hex code function
 #converts last output into proper hex code
