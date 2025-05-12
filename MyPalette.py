@@ -9,9 +9,8 @@ def main():
 def generate_random_color():
     return (random.randit(0,255), random.randit(0,255), random.randit(0, 255))
 
-#define displayable hex code function
-#converts last output into proper hex code
-#return
+def rgb_to_hex(rgb):
+    return '#{:02x}{:02x}{:02x}'.format(rgb)
 
 #define create image function
 #creates an image using previously generated information with set height
