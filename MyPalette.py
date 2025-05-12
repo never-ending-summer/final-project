@@ -16,3 +16,6 @@ def create_image_palette(colors):
     width = 1280
     height = 720
     block_width = width // len(colors)
+
+    image = Image.new("RGB", (width, height), (255, 255, 255))
+    draw = ImageDraw.Draw(image)
