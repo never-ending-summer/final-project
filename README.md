@@ -7,7 +7,7 @@ Demo Video: <https://youtu.be/VL_x5TEj0Rg?si=ljyiPLZe7kH08vSB>
 GitHub Repo: <https://github.com/never-ending-summer/final-project>
 
 ## Description
-MyPalette is a color palette generator for digital artists. It picks 5 colors and puts out an image showcasing them along with the hex codes
+MyPalette is a color palette generator for digital artists. It picks 5 colors and puts out an image showcasing them along with the hex codes.
 
 The main function is able to get the 5 different colors that will be used in the image, calls the create_image_palette function, and prints the message you see in the terminal when you run the program.
 
